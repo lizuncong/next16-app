@@ -122,6 +122,7 @@ export default function Navbar() {
                     {item.href ? (
                       <Link
                         href={item.href}
+                        target={item.target}
                         onClick={() => {
                           setIsOpen(false);
                           setOpenSubmenu(null);

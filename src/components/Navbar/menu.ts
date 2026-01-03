@@ -1,12 +1,16 @@
 interface NavItem {
   href?: string;
   label: string;
+  target?: string;
   children?: NavItem[];
 }
 
 export const navItems: NavItem[] = [
-  { href: "https://github.com/lizuncong/next16-app", label: "GitHub" },
-
+  {
+    href: "https://github.com/lizuncong/next16-app",
+    label: "GitHub",
+    target: "blank",
+  },
   { href: "/", label: "首页" },
   {
     label: "路由",
