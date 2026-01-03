@@ -8,6 +8,7 @@ export default async function Home() {
   const catInfo = res?.[0];
   return (
     <main className=" ">
+      <div>{new Date().toLocaleString()}</div>
       <Image
         src={catInfo?.url}
         alt="Next.js logo"
