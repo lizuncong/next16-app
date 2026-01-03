@@ -5,6 +5,8 @@ interface NavItem {
 }
 
 export const navItems: NavItem[] = [
+  { href: "https://github.com/lizuncong/next16-app", label: "GitHub" },
+
   { href: "/", label: "首页" },
   {
     label: "路由",
@@ -25,5 +27,4 @@ export const navItems: NavItem[] = [
       // { href: "/cache/full-route", label: "全路由缓存" },
     ],
   },
-  { href: "/contact", label: "联系" },
 ];
