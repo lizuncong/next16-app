@@ -20,9 +20,8 @@ export default function List(props: Props) {
   }, []);
   return (
     <div>
-      <div>
-        渲染的时间：{renderTime} - {innerTime}{" "}
-      </div>
+      <div>服务器渲染的时间：{renderTime}</div>
+      <div>客户端useEffect执行的时间：{innerTime}</div>
       <div>
         计数器：{count}{" "}
         <button
