@@ -14,12 +14,12 @@ export default function List(props: Props) {
   const [innerTime, setInnerTime] = useState("");
   const [count, setCount] = useState(0);
   useEffect(() => {
-    console.log("useEffect=====");
+    console.log("product list page useEffect=====");
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setInnerTime(new Date().toLocaleString());
   }, []);
   return (
-    <div>
+    <div className="border rounded border-gray-200 p-4">
       <div>服务器渲染的时间：{renderTime}</div>
       <div>客户端useEffect执行的时间：{innerTime}</div>
       <div>
